@@ -837,7 +837,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
               remove(name.c_str());
           }
       }
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
         
       for (int x=0; x<8; x++) {
           for (int y=0; y<8; y++) {
@@ -857,7 +857,6 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
       log.close();
       
       
-      
       // DS: PredictionMode
       name2 =m_pcCfg->getCsvName();
       name = to_string(m_pcCfg->getSourceHeight()-m_pcCfg->getConformanceWindow().getWindowTopOffset()-m_pcCfg->getConformanceWindow().getWindowBottomOffset() ) + "p/" +name2 + "_" + to_string(m_pcCfg->getSourceWidth())+ "x" +to_string(m_pcCfg->getSourceHeight()-m_pcCfg->getConformanceWindow().getWindowTopOffset()-m_pcCfg->getConformanceWindow().getWindowBottomOffset() )+ "_" + to_string(m_pcCfg->getFrameRate()) +"/" + to_string(m_pcCfg->getBaseQPPublic()-1)+ "/" + POC + "/" + CTU + "/" + "predictionMode_" + name2 + "_" + to_string(m_pcCfg->getSourceWidth())+ "x" +to_string(m_pcCfg->getSourceHeight()-m_pcCfg->getConformanceWindow().getWindowTopOffset()-m_pcCfg->getConformanceWindow().getWindowBottomOffset() ) + "_" + to_string(m_pcCfg->getFrameRate()) + "_" + POC + "_" + CTU + "_" + to_string(m_pcCfg->getBaseQPPublic()-1) + ".csv";
@@ -867,7 +866,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
               remove(name.c_str());
           }
       }
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
         
       for (int x=0; x<8; x++) {
           for (int y=0; y<8; y++) {
@@ -896,7 +895,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
               remove(name.c_str());
           }
       }
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
         
       for (int x=0; x<16; x++) {
           for (int y=0; y<16; y++) {
@@ -925,7 +924,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
               remove(name.c_str());
           }
       }
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
         
       for (int x=0; x<16; x++) {
           for (int y=0; y<16; y++) {
@@ -956,7 +955,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
               remove(name.c_str());
           }
       }
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
         
       for (int x=0; x<8; x++) {
           for (int y=0; y<8; y++) {
@@ -986,7 +985,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
               remove(name.c_str());
           }
       }
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
       log << to_string(pCtu->getTotalCost());
       log.close();
       
@@ -999,7 +998,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
               remove(name.c_str());
           }
       }
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
       log << to_string(pCtu->getTotalBits());
       log.close();
       
@@ -1012,7 +1011,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
               remove(name.c_str());
           }
       }
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
         
       for (int x=0; x<8; x++) {
           for (int y=0; y<8; y++) {
@@ -1040,7 +1039,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
               remove(name.c_str());
           }
       }
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
         
       for (int x=0; x<8; x++) {
           for (int y=0; y<8; y++) {
@@ -1068,7 +1067,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
                    remove(name.c_str());
                }
            }
-           log.open(name, ofstream::app);
+           log.open(name, ofstream::out);
              
            for (int x=0; x<8; x++) {
                for (int y=0; y<8; y++) {
@@ -1200,7 +1199,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
               remove(name.c_str());
           }
       }
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
       log << stdDeviation  << "," << stdDeviation1 << "," << stdDeviation2 << "," << stdDeviation3 << "," << stdDeviation4 <<"\n";
       
       log.close();
