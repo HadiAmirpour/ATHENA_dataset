@@ -823,12 +823,6 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
     // run CTU trial encoder
     m_pcCuEncoder->compressCtu( pCtu );
       
-      for (int z=0; z<256; z++) {
-          if (pcPic->getPOC()) {
-              printf("%u",pCtu->getSkipFlag(z));
-          }
-          
-      }
       
       // DS: depth
       ofstream log;
@@ -998,7 +992,7 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
       
       // DS: Total Bits
       name2 =m_pcCfg->getCsvName();
-      name = to_string(m_pcCfg->getSourceHeight()-m_pcCfg->getConformanceWindow().getWindowTopOffset()-m_pcCfg->getConformanceWindow().getWindowBottomOffset() ) + "p/" +name2 + "/" + to_string(m_pcCfg->getBaseQPPublic()-1)+ "/" + POC + "/" + CTU + "/" + "TotalBits_" + name2 + "_" + to_string(m_pcCfg->getSourceWidth())+ "x" +to_string(m_pcCfg->getSourceHeight()-m_pcCfg->getConformanceWindow().getWindowTopOffset()-m_pcCfg->getConformanceWindow().getWindowBottomOffset() )+ "_" + POC + "_" + CTU + "_" + to_string(m_pcCfg->getBaseQPPublic()-1) + ".csv";
+      name = to_string(m_pcCfg->getSourceHeight()-m_pcCfg->getConformanceWindow().getWindowTopOffset()-m_pcCfg->getConformanceWindow().getWindowBottomOffset() ) + "p/" +name2 + "_" + to_string(m_pcCfg->getSourceWidth())+ "x" +to_string(m_pcCfg->getSourceHeight()-m_pcCfg->getConformanceWindow().getWindowTopOffset()-m_pcCfg->getConformanceWindow().getWindowBottomOffset() )+ "_" + to_string(m_pcCfg->getFrameRate()) +"/" + to_string(m_pcCfg->getBaseQPPublic()-1)+ "/" + POC + "/" + CTU + "/" + "TotalBit_" + name2 + "_" + to_string(m_pcCfg->getSourceWidth())+ "x" +to_string(m_pcCfg->getSourceHeight()-m_pcCfg->getConformanceWindow().getWindowTopOffset()-m_pcCfg->getConformanceWindow().getWindowBottomOffset() ) + "_" + to_string(m_pcCfg->getFrameRate()) + "_" + POC + "_" + CTU + "_" + to_string(m_pcCfg->getBaseQPPublic()-1) + ".csv";
       if (pCtu->getCtuRsAddr()==0 && pcPic->getPOC()==0) {
           std::ofstream file(name);
           if(file){

@@ -14,8 +14,8 @@
             filePath = "source/Lib/TLibEncoder/TEncSlice.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "834"
-            endingLineNumber = "834"
+            startingLineNumber = "828"
+            endingLineNumber = "828"
             landmarkName = "TEncSlice::compressSlice(pcPic, bCompressEntireSlice, bFastDeltaQP)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "source/Lib/TLibEncoder/TEncSlice.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "868"
-            endingLineNumber = "868"
+            startingLineNumber = "862"
+            endingLineNumber = "862"
             landmarkName = "TEncSlice::compressSlice(pcPic, bCompressEntireSlice, bFastDeltaQP)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "source/Lib/TLibEncoder/TEncSlice.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "840"
-            endingLineNumber = "840"
+            startingLineNumber = "834"
+            endingLineNumber = "834"
             landmarkName = "TEncSlice::compressSlice(pcPic, bCompressEntireSlice, bFastDeltaQP)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "source/Lib/TLibEncoder/TEncSlice.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "923"
-            endingLineNumber = "923"
+            startingLineNumber = "917"
+            endingLineNumber = "917"
             landmarkName = "TEncSlice::compressSlice(pcPic, bCompressEntireSlice, bFastDeltaQP)"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "source/Lib/TLibEncoder/TEncSlice.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1041"
-            endingLineNumber = "1041"
+            startingLineNumber = "1035"
+            endingLineNumber = "1035"
             landmarkName = "TEncSlice::compressSlice(pcPic, bCompressEntireSlice, bFastDeltaQP)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "source/Lib/TLibEncoder/TEncSlice.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1097"
-            endingLineNumber = "1097"
+            startingLineNumber = "1091"
+            endingLineNumber = "1091"
             landmarkName = "TEncSlice::compressSlice(pcPic, bCompressEntireSlice, bFastDeltaQP)"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +142,8 @@
             filePath = "source/Lib/TLibEncoder/TEncSlice.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "846"
-            endingLineNumber = "846"
+            startingLineNumber = "840"
+            endingLineNumber = "840"
             landmarkName = "TEncSlice::compressSlice(pcPic, bCompressEntireSlice, bFastDeltaQP)"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "source/Lib/TLibEncoder/TEncSlice.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1217"
-            endingLineNumber = "1217"
+            startingLineNumber = "1211"
+            endingLineNumber = "1211"
             landmarkName = "TEncSlice::compressSlice(pcPic, bCompressEntireSlice, bFastDeltaQP)"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "source/Lib/TLibEncoder/TEncSlice.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "839"
-            endingLineNumber = "839"
+            startingLineNumber = "833"
+            endingLineNumber = "833"
             landmarkName = "TEncSlice::compressSlice(pcPic, bCompressEntireSlice, bFastDeltaQP)"
             landmarkType = "7">
          </BreakpointContent>
@@ -190,8 +190,8 @@
             filePath = "source/Lib/TLibEncoder/TEncSlice.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1218"
-            endingLineNumber = "1218"
+            startingLineNumber = "1212"
+            endingLineNumber = "1212"
             landmarkName = "TEncSlice::compressSlice(pcPic, bCompressEntireSlice, bFastDeltaQP)"
             landmarkType = "7">
          </BreakpointContent>
