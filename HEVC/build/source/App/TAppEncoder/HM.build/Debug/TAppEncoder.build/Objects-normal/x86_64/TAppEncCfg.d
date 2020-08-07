@@ -1,0 +1,27 @@
+dependencies: \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/App/TAppEncoder/TAppEncCfg.cpp \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/../TLibCommon/TComRom.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/CommonDef.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/TypeDef.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/../TLibCommon/ProfileLevelTierFeatures.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/../TLibCommon/CommonDef.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/App/TAppEncoder/TAppEncCfg.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/../Utilities/program_options_lite.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/../TLibEncoder/TEncCfg.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/../TLibCommon/TComSlice.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/TComRom.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/TComList.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/TComChromaFormat.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/TComRectangle.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/ContextTables.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/Debug.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/../TLibEncoder/TEncRateCtrl.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibEncoder/../TLibCommon/CommonDef.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibEncoder/../TLibCommon/TComDataCU.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/TComMotionInfo.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/TComMv.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/TComSlice.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/TComRdCost.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/TComPattern.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibCommon/TComRdCostWeightPrediction.h \
+  /Users/hadi/Desktop/encoders/cost/HEVC/source/Lib/TLibEncoder/../TLibEncoder/TEncCfg.h
