@@ -855,7 +855,7 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
           }
       }
       
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
         
       if (rpcBestCU->getZorderIdxInCtu()==0 && uiDepth==0) {
           if (rpcBestCU->getCtuRsAddr()!=0 || rpcBestCU->getPic()->getPOC()!=0) {
@@ -887,7 +887,7 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
           }
       }
       
-      log.open(name, ofstream::app);
+      log.open(name, ofstream::out);
         
       if (rpcBestCU->getZorderIdxInCtu()==0 && uiDepth==0) {
           if (rpcBestCU->getCtuRsAddr()!=0 || rpcBestCU->getPic()->getPOC()!=0) {
