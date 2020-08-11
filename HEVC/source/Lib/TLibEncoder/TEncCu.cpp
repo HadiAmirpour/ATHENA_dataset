@@ -845,17 +845,14 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
       std::string name2 =m_pcEncCfg->getCsvName();
       char POC[256]; sprintf(POC, "%03d", pcPic->getPOC());
       char CTU[256]; sprintf(CTU, "%04d", rpcBestCU->getCtuRsAddr());
-      
       std::string name = to_string(m_pcEncCfg->getSourceHeight()-m_pcEncCfg->getConformanceWindow().getWindowTopOffset()-m_pcEncCfg->getConformanceWindow().getWindowBottomOffset() ) + "p/" +name2 + "_" + to_string(m_pcEncCfg->getSourceWidth())+ "x" +to_string(m_pcEncCfg->getSourceHeight()-m_pcEncCfg->getConformanceWindow().getWindowTopOffset()-m_pcEncCfg->getConformanceWindow().getWindowBottomOffset())+ "_" + to_string(m_pcEncCfg->getFrameRate()) +"/" + to_string(m_pcEncCfg->getBaseQPPublic()-1)+ "/" + POC + "/" + CTU + "/" + "CUBits_" + name2 + "_" + to_string(m_pcEncCfg->getSourceWidth())+ "x" +to_string(m_pcEncCfg->getSourceHeight()-m_pcEncCfg->getConformanceWindow().getWindowTopOffset()-m_pcEncCfg->getConformanceWindow().getWindowBottomOffset()) + "_" + to_string(m_pcEncCfg->getFrameRate()) + "_" + POC + "_" + CTU + "_" + to_string(m_pcEncCfg->getBaseQPPublic()-1) + ".csv";
-      
-      if (rpcBestCU->getCtuRsAddr()==0 && pcPic->getPOC()==0 && uiDepth==0) {
+      if ( uiDepth==0) {
           std::ofstream file(name);
           if(file){
               remove(name.c_str());
           }
-      }
-      
-      log.open(name, ofstream::out);
+      }  
+      log.open(name, ofstream::app);
         
       if (rpcBestCU->getZorderIdxInCtu()==0 && uiDepth==0) {
           if (rpcBestCU->getCtuRsAddr()!=0 || rpcBestCU->getPic()->getPOC()!=0) {
@@ -880,14 +877,13 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
       
       name = to_string(m_pcEncCfg->getSourceHeight()-m_pcEncCfg->getConformanceWindow().getWindowTopOffset()-m_pcEncCfg->getConformanceWindow().getWindowBottomOffset() ) + "p/" +name2 + "_" + to_string(m_pcEncCfg->getSourceWidth())+ "x" +to_string(m_pcEncCfg->getSourceHeight()-m_pcEncCfg->getConformanceWindow().getWindowTopOffset()-m_pcEncCfg->getConformanceWindow().getWindowBottomOffset())+ "_" + to_string(m_pcEncCfg->getFrameRate()) +"/" + to_string(m_pcEncCfg->getBaseQPPublic()-1)+ "/" + POC + "/" + CTU + "/" + "CUCosts_" + name2 + "_" + to_string(m_pcEncCfg->getSourceWidth())+ "x" +to_string(m_pcEncCfg->getSourceHeight()-m_pcEncCfg->getConformanceWindow().getWindowTopOffset()-m_pcEncCfg->getConformanceWindow().getWindowBottomOffset()) + "_" + to_string(m_pcEncCfg->getFrameRate()) + "_" + POC + "_" + CTU + "_" + to_string(m_pcEncCfg->getBaseQPPublic()-1) + ".csv";
       
-      if (rpcBestCU->getCtuRsAddr()==0 && pcPic->getPOC()==0 && uiDepth==0) {
+      if ( uiDepth==0) {
           std::ofstream file(name);
           if(file){
               remove(name.c_str());
           }
-      }
-      
-      log.open(name, ofstream::out);
+      }     
+      log.open(name, ofstream::app);
         
       if (rpcBestCU->getZorderIdxInCtu()==0 && uiDepth==0) {
           if (rpcBestCU->getCtuRsAddr()!=0 || rpcBestCU->getPic()->getPOC()!=0) {
@@ -898,9 +894,7 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
       {
          log << ",";
       }
-      log << to_string(rpcBestCU->getTotalCost()) ;
-      
-      
+      log << to_string(rpcBestCU->getTotalCost()) ;         
       log.close();
       
       
